@@ -9,9 +9,14 @@ function createGrid(dimensions)
     for (let i = 0; i < (rows * cols); i++)
     {
         let cell = document.createElement("div");
-        //cell.innerText = (i + 1);
         container.appendChild(cell).className = "grid-item";
     }
 }
 
 createGrid(16);
+
+document.querySelectorAll(".grid-item").forEach(item => {
+    item.addEventListener('mouseover', event => {
+        item.style.backgroundColor = "black";
+    })
+})
