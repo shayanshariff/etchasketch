@@ -20,3 +20,6 @@ document.querySelectorAll(".grid-item").forEach(item => {
         item.style.backgroundColor = "black";
     })
 })
+
+
+
