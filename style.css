@@ -3,16 +3,11 @@
     --grid-cols: 1;
     --grid-rows: 1;
 }
-body {
-    background-color: #DAF7A6;
-}
+
 #header{
-    border: 2px solid black;
     display:flex;
-    border-top-right-radius: 25px;
-    border-top-left-radius: 25px;
     background-color: white;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
     width: 44.2vw;
     border-bottom: 0px;
@@ -38,9 +33,7 @@ button {
     height: 40vw;
     margin: auto;
     margin-top: 0;
-    padding: 40px;
-    padding-bottom: 80px;
-    background-color: red;
+
     border: 2px solid black;
 
     
@@ -49,6 +42,6 @@ button {
 
 .grid-item {
     background-color: white;
-    border: 1px solid black;
+    border: 1px solid #78d0aa ;
     
 }
