@@ -11,15 +11,27 @@ function createGrid(dimensions)
         let cell = document.createElement("div");
         container.appendChild(cell).className = "grid-item";
     }
+    document.querySelectorAll(".grid-item").forEach(item => {
+        item.addEventListener('mouseover', event => {
+            item.style.backgroundColor = "black";
+        })
+    })
 }
 
 createGrid(16);
 
-document.querySelectorAll(".grid-item").forEach(item => {
-    item.addEventListener('mouseover', event => {
-        item.style.backgroundColor = "black";
-    })
-})
 
 
+function clearGrid(){
+    container.innerHTML = '';
+
+    let dimensions = prompt("Grid size(1 - 100): ");
+    if (dimensions >= 1 && dimensions <= 100){
+        createGrid(dimensions);
+    }
+    else {
+        clearGrid;
+    }
+}
+document.getElementById("reset").addEventListener("click", clearGrid);
 

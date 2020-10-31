@@ -13,17 +13,23 @@
     border-bottom: 0px;
     padding-bottom: 0;
 }
-p {
-    font-size: 12px;
-}
 button {
     margin: auto;
-    padding: 10px;
-    margin-right: 50px;
-    width: 200px;
-    height: 50px;
-    border: 2px solid black;
-    border-radius: 15px;
+    margin-top: 5px;
+    height: 30px;
+    width: 70px;
+
+}
+#footer {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color:  #78d0aa;
+    border: 1px solid  #78d0aa;
 }
 #container {
     display: grid;
@@ -45,3 +51,4 @@ button {
     border: 1px solid #78d0aa ;
     
 }
+
